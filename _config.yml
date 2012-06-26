@@ -1,0 +1,9 @@
+permalink: pretty
+pygments: true
+auto: false
+baseurl: /
+markdown: maruku
+maruku:
+  use_tex: false
+  png_dir: images/latex
+  png_url: /images/latex
