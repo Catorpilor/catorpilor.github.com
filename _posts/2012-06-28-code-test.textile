@@ -1,0 +1,22 @@
+---
+layout: post
+title: code test
+date: 2012-06-28 00:49
+post-link:
+---
+
+{% highlight bash %}
+mkdir test
+cd test
+{% endhighlight %}
+
+{% highlight c++ %}
+int add(int a, int b)
+{
+	int result=a+b;
+	return result;
+}
+{% endhighlight %}
+
+this is a test
+
