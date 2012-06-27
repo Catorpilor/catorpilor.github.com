@@ -1,0 +1,9 @@
+---
+layout: post
+title: my first blog
+date: 2012-06-27 18:37
+post-link:
+---
+this is my first blog.
+mark it.
+
