@@ -1,9 +1,4 @@
-permalink: pretty
+permalink: ./:year/:month/:day/:title.html
 pygments: true
-auto: false
 baseurl: /
-markdown: maruku
-maruku:
-  use_tex: false
-  png_dir: images/latex
-  png_url: /images/latex
+

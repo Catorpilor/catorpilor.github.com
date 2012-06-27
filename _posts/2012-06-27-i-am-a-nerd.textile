@@ -1,0 +1,7 @@
+---
+layout: post
+title: i am a nerd
+date: 2012-06-27 17:03
+post-link:
+---
+yes it's true
