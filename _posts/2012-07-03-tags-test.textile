@@ -1,0 +1,13 @@
+---
+layout: post
+title: tags test
+date: 2012-07-03 20:15
+post-link:
+tags:
+- jekyll
+---
+
+tags need more test.
+
+bq. Chris
+

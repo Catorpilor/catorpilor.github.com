@@ -24,16 +24,17 @@ task :new_post, :title do |t, args|
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
   puts "Creating new post: #{filename}"
-  puts "gvim #{filename}"
+  puts "vim #{filename}"
   open(filename, 'w') do |post|
     post.puts "---"
     post.puts "layout: post"
     post.puts "title: #{title.gsub(/&/,'&amp;')}"
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
     post.puts "post-link:"
+    post.puts "tags:"
     post.puts "---"
     post.puts ""
-    post.puts "bq. BLOCKQUOTE"
+    post.puts "bq. Chris"
     post.puts ""
   end
 end
