@@ -4,8 +4,26 @@ layout: default
 {% if page.post-link %}
 <h1><a href="{{ page.post-link }}" title="External link">{{ page.title }}</a></h1>
 {% else %}
-<h1>{{ page.title }}</h1>
+<h1>
+		{{ page.title }}
+		<ul class="tag_list_in_post">
+				              {% for tag in page.tags %}
+				              <li class="inline archive_list"><a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a></li>
+				              {% endfor %}
+		</ul>
+
+</h1>
 {% endif %}
+<!--
+<h1>
+	<ul class="tag_list_in_post">
+			{% for tag in page.tags %}
+			<li class="inline archive_list"><a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a></li>
+			{% endfor %}
+	</ul>
+
+</h1>-->
+
 <div id="post">
 {{ content }}
 </div>
@@ -13,11 +31,11 @@ layout: default
 
 <div align="right" class="date-container">{{ page.date | date:"%e %B %Y @ %I:%M%p" | upcase }}</div>
 
-<div id="related">
+<!--<div id="related">
   <h1>Related Posts</h1>
   <ul class="posts">
     {% for post in site.related_posts limit:3 %}
       <li><span class="post_date">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-</div>
+</div>-->
