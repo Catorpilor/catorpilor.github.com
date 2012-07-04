@@ -67,6 +67,7 @@ header h2 {
   font-weight: 300;
   color: #ff0000;
 }
+div.meta_wrapper{border:1px solid #C9C6C3;border-width:1px 0;color:#666;font-size:12px;line-height:20px;margin:0 0 20px;padding:1px 0;text-transform:uppercase}
 /*
 header h2.toleft {text-align:left}
 header h2.toright {text-align:right}*/

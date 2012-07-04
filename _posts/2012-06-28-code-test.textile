@@ -3,6 +3,8 @@ layout: post
 title: code test
 date: 2012-06-28 00:49
 post-link:
+tags:
+- code
 ---
 
 {% highlight bash %}
