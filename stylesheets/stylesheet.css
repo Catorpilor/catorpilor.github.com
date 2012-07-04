@@ -165,7 +165,7 @@ ul li:before {
   line-height: 16px;
 }*/
 
-ul#nav{float:left;font-size:16px;font-variant:small-caps;font-weight:bold;line-height:1;margin:-14px 0 0 24px;text-align:center;text-transform:lowercase;width:270px;}
+ul#nav{float:left;font-size:16px;font-variant:small-caps;font-weight:bold;line-height:1;margin:-10px 90px 0 0px;text-align:left;text-transform:lowercase;width:270px;}
 ul.tag_list_in_post{border-left:1px solid #bbb;display:inline;margin-left:15px;padding:0 0 0 10px;}
 ul.tags{float:right;width:280px}
 ul.tag_list{margin-left:52px;padding-bottom:20px;}
