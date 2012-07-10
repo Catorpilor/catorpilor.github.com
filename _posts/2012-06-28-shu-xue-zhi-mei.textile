@@ -3,6 +3,8 @@ layout: post
 title: 数学之美
 date: 2012-06-28 00:56
 post-link:
+tags:
+- 数学之美
 ---
 
 bq. “beauty of math”
