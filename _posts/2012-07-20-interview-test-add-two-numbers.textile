@@ -9,8 +9,7 @@ tags:
 ---
 
 p. 许久没有coding了，这几天在翻阅水木面试版的内容时发现了这么一个网站
-"leetcode":http://leetcode.com 看了下感觉不错，它的online judge 功能看着很赞可惜的是到晚上提交的时候出问题了，在论坛提问后得到的回复是_will be back soon_
-Errrrrr
+"leetcode":http://leetcode.com 看了下感觉不错，它的online judge 功能看着很赞可惜的是到晚上提交的时候出问题了，在论坛提问后得到的回复是[_will be back soon_]Errrrrr
 
 p. 在开始前看了下前面的一些coding skills的介绍感觉很不错。好，回到正题选择的题目是简单的*add_two_numbers* 一下是它的要求：
 
@@ -27,6 +26,19 @@ p. 题目很好理解，唯一需要关注的就是*进位问题* _(题目中说
 p. 其中在1中处理进位的问题，在这2类中分别递归调用函数进行*add*计算。关于*进位*的问题主要判断进位的那一位数字是否为9，如果否的话直接加1。如果是9的话就需要考虑一下几种情况.
 # 这一位是最高位。(这种简单只需要new 一个新节点)
 # 不是最高位就需要判断下一位是否为9这就回到一开始的判断那里。只需顺序遍历剩余的位数一个while循环可解决。
+
+
+
+p. [**{color:red}Good news is "online judge":http://www.leetcode.com/onlinejudge system finally works.**]
+
+p. 杯具的是原来的代码提交上去总是提示[*{color:red}Memory Limit Exceeded*]遂放弃用递归来实现改为迭代。基本思路不便这次为了节省空间直接在[**第一个操作数**]修改,如果[*{color:yellow}l1*]的长度小于[*{color:yellow}l2*],则在与[*{color:yellow}l1*]等长处截断[*{color:yellow}l2*]，使[*{color:yellow}l1*]的尾指针指向[*{color:yellow}l2*]其余的元素。
+
+p. [+这次在处理进位问题时也做了简化如果有进位则首先添加到[*{color:yellow}l1*]产生进位的下一位元素，如果[*{color:yellow}l1*]到末尾了则将进位加到[*{color:yellow}l2*]相应位置的元素上面+] 剩下的思路与原来的类似。
+
+* "小数据运行结果":./accessary/judge_small.jpg
+* "大数据运行结果":./accessary/judge_large.jpg
+
+
 
 p=. !http://images.suite101.com/610130_com_sw_2d6_1.jpg!
 
