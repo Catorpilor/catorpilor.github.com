@@ -1,6 +1,6 @@
 ---
 layout: post
-title: interview test_add_two_numbers
+title: test_add_two_numbers
 date: 2012-07-20 14:03
 post-link:
 tags:
