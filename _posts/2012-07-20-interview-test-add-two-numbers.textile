@@ -9,12 +9,10 @@ tags:
 ---
 
 p. 许久没有coding了，这几天在翻阅水木面试版的内容时发现了这么一个网站
-"leetcode":http://leetcode.com 看了下感觉不错，它的online judge 功能看着很赞
-可惜的是到晚上提交的时候出问题了，在论坛提问后得到的回复是_will be back soon_
+"leetcode":http://leetcode.com 看了下感觉不错，它的online judge 功能看着很赞可惜的是到晚上提交的时候出问题了，在论坛提问后得到的回复是_will be back soon_
 Errrrrr
 
-p. 在开始前看了下前面的一些coding skills的介绍感觉很不错。好，回到正题选择的题目
-是简单的*add_two_numbers* 一下是它的要求：
+p. 在开始前看了下前面的一些coding skills的介绍感觉很不错。好，回到正题选择的题目是简单的*add_two_numbers* 一下是它的要求：
 
 bq. You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit.Add the two numbers and return it as a linked lisst.
 *Input* (2->4->3) + (5->6->4)
