@@ -35,8 +35,8 @@ p. 杯具的是原来的代码提交上去总是提示[*{color:red}Memory Limit 
 
 p. [+这次在处理进位问题时也做了简化如果有进位则首先添加到[*{color:yellow}l1*]产生进位的下一位元素，如果[*{color:yellow}l1*]到末尾了则将进位加到[*{color:yellow}l2*]相应位置的元素上面+] 剩下的思路与原来的类似。
 
-* "小数据运行结果":./accessary/judge_small.jpg
-* "大数据运行结果":./accessary/judge_large.jpg
+* "小数据运行结果":/../accessary/judge_small.jpg
+* "大数据运行结果":/../accessary/judge_large.jpg
 
 
 
