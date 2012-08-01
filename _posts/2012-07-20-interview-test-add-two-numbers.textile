@@ -37,7 +37,7 @@ p. [+这次在处理进位问题时也做了简化如果有进位则首先添加
 
 p. Pseudocode如下所示:
 
-bc..lresult: l1
+bc.. lresult: l1
 while(l1!=NULL||l2!=NULL)
 	if(l1!=NULL&&l2!=NULL) then add l2's val to l1 and check if it's bigger than 10,if so module it with 10 and check whether l1's next or l2'next != NULL and add 1 to
 	that val otherwise new a node with the val equals to 1. if it's not bigger than 10, update l1 and l2. in this update we'll check if l1 is shorter than l2 then cut 
