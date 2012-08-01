@@ -1,0 +1,71 @@
+---
+layout: post
+title: mulitiple_sum_problem
+date: 2012-07-24 18:51
+post-link:
+tags:
+- algorithm
+- interview
+---
+
+p)). 继续扫["leetcode":http://www.leetcode.com]上面的题，上次做的那个["求和":./2012/07/20/interview-test-add-two-numbers.html] 是随机选择的，现在决定从头开始做起!
+
+p. 
+
+h3(#3sum-problem). 3SUM problem.
+
+bq. Given a set S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the set which gives the sum of zero.
+For example, given set S = {-1 0 1 2 -1 -4},
+One possible solution set is:
+(-1, 0, 1)
+(-1, 2, -1)
+Note that (0, 1, -1) is not part of the solution above, because (0, 1, -1) is the duplicate of (-1, 0, 1). Same with (-1, -1, 2).
+For a set S, there is probably no “the” solution, another solution could be:
+(0, 1, -1)
+(2, -1, -1)
+
+p. 这也就是著名的["the 3sum problem":http://en.wikipedia.org/wiki/3SUM].The 3sum problem is the extension of the problem below:
+
+bq. Given a set S of n integers, find all pairs of integers of a and b in S such that a + b = k?
+
+p. _{color:yellow}The above problem can be solved in O(n) time, assuming that the set S is already sorted. By using two index first and last, each pointing to the first and last element, we look at the element pointed by first, which we call A. We know that we need to find B = k – A, the complement of A. If the element pointed by last is less than B, we know that the choice is to increment pointer first by one step. Similarly, if the element pointed by last is greater than B, we decrement pointer last by one step. We are progressively refining the sum step by step. Since each step we move a pointer one step, there are at most n steps, which gives the complexity of O(n)._
+
+p. 3Sum的基本思路如下:
+
+# 对原始数据进行排序,可在O(nlgn)内完成。
+# 设置3个游标分别指向开始元素，第一个游标的下一个元素位置以及最后一个元素。这里顺序查找满足条件的三个数据。时间为O(n^2)
+
+p. *{color:red}Pseudoccode Form:*
+
+bc.. for i: 0->arr[i]<=0
+    k: n-1
+    for j: i+1->k
+	if(arr[i]+arr[j]+arr[k]<0) then j++
+	else if(arr[i]+arr[j]+arr[k]>0) then k--
+	else then update j,k and store the current i,j,k
+    update i and skip the identical arr[i]
+
+p. 以上就是基本的算法，时间复杂度为O(n[^2^])
+
+h3(#4sum-problem). 4Sum Problem.
+
+bq. Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.
+
+p(#4sum-problem). 四数求和是["三数求和":#3sum-problem]的一个扩展,我们可以在O(n[^2^])的时间内解决三数求和，由此类推的话可以在O(n[^3^])的时间内解决四数求和的问题。基本思路同上，它的Pseudocode 如下所示:
+
+bc.. for i: 0->n-4
+     l=n-1
+     for j: i+1->l-1
+	for k: j+1->l
+	    if sum(arr[i,j,k,l])<target then k++
+	    else if sum(arr[i,j,k,l]>target) then l--
+	    else update k,l 
+	update j and skip the identical arr[j]
+     update i and skip the identical arr[i]
+
+
+p=. !http://www.bzcm.net/data/attachement/jpg/site2/20091118/0023aead1cba0c6dff2f51.jpg! 
+
+
+bq>. By Chris
+

@@ -5,7 +5,7 @@ date: 2012-07-20 14:03
 post-link:
 tags:
 - interview
-- algorithem
+- algorithm
 ---
 
 p. 许久没有coding了，这几天在翻阅水木面试版的内容时发现了这么一个网站
