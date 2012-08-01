@@ -63,7 +63,9 @@ bc.. for i: 0->n-4
 	update j and skip the identical arr[j]
      update i and skip the identical arr[i]
 
+p. 至此求和类型的问题已经基本解决。
 p.
+
 
 p=. !http://www.bzcm.net/data/attachement/jpg/site2/20091118/0023aead1cba0c6dff2f51.jpg! 
 
