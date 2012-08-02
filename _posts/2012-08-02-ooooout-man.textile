@@ -1,0 +1,22 @@
+---
+layout: post
+title: Ooooout man
+date: 2012-08-02 20:01
+post-link:
+tags:
+- coding
+- 心情
+---
+
+p. 真心鶸爆了啊。c++0x出来有些日子了。由于日常工作中还是有c++98较多，再加上个人的懒散原因一直没有去关注。知道这几天开始看["folly":https://github.com/facebook/folly]的代码满头雾水，甚至去google “auto const”的含义是啥。。。[*{color:red}真是鄙视自己啊*].
+
+p. [_{color:yellow}仔细研究一下C++0x的新特性_] 用心阅读代码!!!
+
+h3. Amen way to go!!!!
+
+p=. !http://bj.9ask.cn/zhishichanquan/UploadFiles_5777/200912/2009120919234007.jpg!
+
+
+
+bq>. Chris
+
