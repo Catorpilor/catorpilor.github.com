@@ -8,8 +8,6 @@ tags:
 - prime number
 ---
 
-h3. Prime number
-
 p. ["stackflow":http://stackoverflow.com/questions/453793/which-is-the-fastest-algorithm-to-find-prime-numbers]上面有个很有趣的问题，问最快的计算素数的算法是哪个？楼下有人提到了[*{color:yellow}"Sieve of Atkin":http://en.wikipedia.org/wiki/Sieve_of_Atkin*],该算法比[_{color:red}"Sieve of Eratosthenes":http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes_]要快。
 
 p. 我自己对后者较熟悉，因为在早些时候看到过这个算法[_(汗啊，以前不知道是叫这个名)_]，今天在wiki上重温了后对该算法又有了较深的认识。
@@ -34,7 +32,9 @@ h4. Algorithm complexity
 p. 时间复杂度为[**{color:yellow}O(nloglogn)**],空间复杂度为O(n).
 
 h4. 实现
+
 p. pseudocode:
+
 bc.. Input: n (n>1)
 Let A be the array of bool values and initially set to true
 for i: 3->sqrt(n) i+=2
