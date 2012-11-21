@@ -16,15 +16,11 @@ h2. 有段时间没有更新博客内容了，总结归纳了一下这段时间�
 # Codecademy中js与css的学习
 # 阅读 <<The C++ standard library>>
 
-p((. 目前博客的这套CSS是引用的别人的，当初在github上搭建这个平台时对css&html是一窍不通，照猫画虎的修改了些东西后就弄成了目前这个框架。(这个汗。。其实木有做多大的改动)。还有就是看到别的blog上面有tag list而且github page对tag的支持不够只能通过脚本语言来实现，在网上搜索
-找到相关的说明后经过一通折腾，最终就形成了目前的框架结构。(老激动了^^)
+p((. 目前博客的这套CSS是引用的别人的，当初在github上搭建这个平台时对css&html是一窍不通，照猫画虎的修改了些东西后就弄成了目前这个框架。(这个汗。。其实木有做多大的改动)。还有就是看到别的blog上面有tag list而且github page对tag的支持不够只能通过脚本语言来实现，在网上搜索找到相关的说明后经过一通折腾，最终就形成了目前的框架结构。(老激动了^^)
 
-p((. 这几天在["Codeacdemy":http://www.codecademy.com]上学习了一些基础的css知识，对它也算有个了解，现在回过头来再看当初这套css就不在像看天书
-那么晦涩难懂了。所以就动了一个念头"弄一套属于自己的css"。目前的这个界面已经有些审美疲劳了。。。。
+p((. 这几天在["Codeacdemy":http://www.codecademy.com]上学习了一些基础的css知识，对它也算有个了解，现在回过头来再看当初这套css就不在像看天书那么晦涩难懂了。所以就动了一个念头"弄一套属于自己的css"。目前的这个界面已经有些审美疲劳了。。。。
 
-p((. Freeswitch从接触到现在也7-8个月了，从0开始到搭建成目前的这套办公系统我学到了很多。研究了ESL并通过具体的例子了解了它内部event的
-流程；研究了与E1板卡配套的模块从开始的openzap到目前的freetdm等。官方["wiki":http://wiki.freeswitch.org]以及它的maillist很好很强大。目前这
-快需要研究的就是通过LUA脚本来实现更高级复杂的IVR以及通过mod_curl模块与webservice做集成等等。
+p((. Freeswitch从接触到现在也7-8个月了，从0开始到搭建成目前的这套办公系统我学到了很多。研究了ESL并通过具体的例子了解了它内部event的流程；研究了与E1板卡配套的模块从开始的openzap到目前的freetdm等。官方["wiki":http://wiki.freeswitch.org]以及它的maillist很好很强大。目前这快需要研究的就是通过LUA脚本来实现更高级复杂的IVR以及通过mod_curl模块与webservice做集成等等。
 
 p((. 来个todo-list:
 # AgentMap的文档以及demo的完善
@@ -35,5 +31,5 @@ p((. 最后写到这里已经是2012/11/22 1:05了，新的一天已经开始努
 
 p=. !http://www.dfbdxx.cn/uploads/allimg/110612/1142422507-1.jpg!
 
-bq. Chris
+bq>. Chris
 
