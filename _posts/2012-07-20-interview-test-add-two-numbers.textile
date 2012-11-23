@@ -47,8 +47,10 @@ while(l1!=NULL||l2!=NULL)
 p. 运行结果如下所示:
 
 
-* "小数据运行结果":/../accessary/judge_small.jpg
-* "大数据运行结果":/../accessary/judge_large.jpg
+* "小数据运行结果"
+p=. !/../accessary/judge_small.jpg!
+* "大数据运行结果"
+p=. !/../accessary/judge_large.jpg!
 
 
 
