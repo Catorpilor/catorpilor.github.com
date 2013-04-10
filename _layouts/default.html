@@ -13,9 +13,11 @@
    </style>
 
    <!-- Homepage CSS -->
-   <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen"/>
-   <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen"/>
-   <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print"/>
+   <!--<link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen"/>-->
+   <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css" media="screen"/>
+   <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap-responsive.min.css" media="screen"/>
+   <!--<link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen"/>
+   <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print"/>-->
 
 </head>
 <body>
@@ -24,29 +26,19 @@
      <div class="container">
 	<h1>
 	   <a href="{{ site.baseurl }}" title=" Home">Code Complement</a>
-	</h1>
-	<h2>
-		   <ul id="nav">
-          		 <li class="nav_list_item" ><a class="nav_list_link" href="/pages/archives.html">Archives</a></li>
-          		 <li class="nav_list_item" ><a class="nav_list_link" href="/pages/projects.html">Projects</a></li>
-          		 <li class="nav_list_item" ><a class="nav_list_link" href="/pages/about.html">About</a></li>
-			 <li class="nav_list_item" ><a class="nav_list_link" href="/atom.xml">Rss</a></li>
-       		   </ul>
-	     
-
-
-	</h2>
-	<!--<h2>
-	    <a href="{{ site.baseurl }}pages/archives.html">Archives</a>
-	    <a href="{{ site.baseurl }}pages/about.html">About</a>
-        </h2>-->
-	<!--<h2>
-	<ul id="nav">
-	   <li class="nav_list_item" style="text-align:left"><a class="nav_list_link" href="{{ sites.baseurl }}pages/about.html">About</a></li>
-           <li class="nav_list_item" style="text-align:left"><a class="nav_list_link" href="{{ sites.baseurl }}pages/projects.html">Projects</a></li>
-	   <li class="nav_list_item" style="text-align:left"><a class="nav_list_link" href="{{ sites.baseurl }}pages/archives.html">Archives</a></li>
-	</ul>
-	</h2>-->
+   </h1>
+   <div class="navbar navbar-fixed-top">
+       <div class="navbar-inner">
+           <div class="container">
+               <div class="nav-collapse">
+                   <ul id="nav">
+                       <li><a href="/pages/archives.html">Archives</a></li>
+                       <li><a  href="/pages/projects.html">Projects</a></li>
+                       <li><a href="/pages/about.html">About</a></li>
+                       <li><a href="/atom.xml">Rss</a></li>
+                   </ul>
+               </div>
+           </div>
      </div>
   </header>
 
@@ -84,7 +76,6 @@
                     $backtotop.fadeOut();
                 }
            });
-
         });
     </script>
     <div id='backtotop'>回到顶部</div>
