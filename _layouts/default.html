@@ -18,6 +18,8 @@
    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap-responsive.min.css" media="screen"/>
    <!--<link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen"/>
    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print"/>-->
+   <script src="/javascripts/bootstrap.min.js"></script>
+   <script src="/javascripts/backtotop.js"></script>
 
 </head>
 <body>
@@ -39,7 +41,7 @@
      </div>
   </header>
 
-<div class="container">
+<div class="container" id="container">
   
   
   <section>
@@ -56,26 +58,8 @@
   </ul>
   </div>-->
 </div>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var $backtotop = $('#backtotop');
-            var top = $(window).height() - $backtotop.height() - 90;
-            $backtotop.css({top: top,right:100});
-            $backtotop.click(function(){
-                $('html,body').animate({ scrollTop : 0});
-                return false;
-            });
-            $(window).scroll(function() {
-                var windowheight = $(window).scrollTop();
-                if(windowheight > 200) {
-                    $backtotop.fadeIn();
-                }else{
-                    $backtotop.fadeOut();
-                }
-           });
-        });
-    </script>
-    <div id="backtotop">回到顶部</div>
+
+<div id="backtotop">回到顶部</div>
 
 <!--<script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
