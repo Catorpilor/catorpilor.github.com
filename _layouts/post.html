@@ -4,15 +4,15 @@ layout: default
 {% if page.post-link %}
 <h1><a href="{{ page.post-link }}" title="External link">{{ page.title }}</a></h1>
 {% else %}
-<h1>
+<h2>
 		{{ page.title }}
-		<ul class="tag_list">
-				              {% for tag in page.tags %}
-				              <li class="inline archive_list"><a href="/tag/{{ tag }}">{{ tag }}</a></li>
-				              {% endfor %}
+		<ul class="tag_list_in_post">
+            {% for tag in page.tags %}
+                <li class="inline archive_list"><a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a></li>
+            {% endfor %}
 		</ul>
 
-</h1>
+</h2>
 {% endif %}
 <!--
 <h1>

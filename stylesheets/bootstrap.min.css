@@ -13,16 +13,16 @@ ul.tags{float:right;width:280px}
 ul.tag_list{margin-left:52px;padding-bottom:20px;}
 
 a.tag_list_link{border-left: 1px solid #ccc;color:#888;font-size:14px;font-variant:small-caps;margin:0;padding: 0 6px;text-transform:l
-a.tag_list_link:first-child{border:0}
+a.tag_list_link:first-child{border:0;}
 a.tag_list_link:hover{color:#444;}
 
 ul.tags li{border-left:1px solid #ccc;display:inline;list-style:none;margin:0;padding:0 8px;position:relative;}
 ul.tags li:first-child{border:0;padding-left:0}
 
-li.archive_list{list-style:none;margin:0;padding-bottom:10px;}
-li.inline{display:inline}
+li.archive_list {list-style:none;margin:0;padding-bottom:10px;}
+li.inline {display:inline;}
 li.nav_list_item{display:inline;font-size:18px;margin:0 0 0 0;position:relative;width:80px;}
-li.tag_list_item{line-height:1;list-style:none;margin:0;}
+li.tag_list_item {line-height:1;list-style:none;margin:0;}
 
 
 
