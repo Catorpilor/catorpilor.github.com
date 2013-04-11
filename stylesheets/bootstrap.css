@@ -899,6 +899,12 @@ hr {
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #ffffff;
 }
+hr.invisble {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
 
 abbr[title],
 abbr[data-original-title] {
