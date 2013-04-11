@@ -3,17 +3,17 @@ layout: default
 title: Home
 ---
 
-<div id="container">
+<!--<div class="container" id="container">-->
 	<ul>
         {% for post in site.posts limit: 15 %}
-        <div class="container">
+           <div class="container">
       	{% capture post_date %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
       	{% if post_date != prev_post_date %}
         	<div align="right" class="date-container">{{ post.date | date:"%A, %e %B %Y" | upcase }}</div>
       	{% endif %}
       	{% capture prev_post_date %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
         {% if post.post-link %}
-        	<div class="container">
+            <div class="container">
                 <a href="{{ post.post-link }}" title="External link">{{ post.title }}</a> 
                 <a class="glyph-permalink" href="{{ post.url }}" title="Permanent link to: '{{ post.title }}'">&diams;</a>
                 <ul class="tag_in_list_post">
@@ -25,22 +25,21 @@ title: Home
         {% else %}
             <div class="container">
                 <span><h2>{{ post.title }}</h2></span> 
-                <a class="glyph-permalink" href="{{ post.url }}" title="Permanent link to: '{{ post.title }}'">&diams;</a>
                 <div class="nav-collapse">
-			        <ul class="nav">
+	            <ul class="nav">
                         {% for tag in post.tags %}
                             <li class="inline label label-info"><a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>
-	        </div>
+	    </div>
         {% endif %}
         {{ post.content }}
-      	</div>
+      	   </div>
       	{% if forloop.last == false %}
-      	</hr>
+      	   </hr>
       	{% endif %}
     	{% endfor %}
   	</ul>
-</div>
+<!--</div>-->
 
