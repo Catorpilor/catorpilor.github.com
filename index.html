@@ -21,12 +21,12 @@ title: Home
         {% else %}
             <div class="container">
                 <div class="row-fluid">
-                   <div class="span7">
+                   <div class="span5">
                       <span><h2>{{ post.title }}</h2></span>
                     </div>
-                   <div class="span3">
+                   <div class="span6">
       	           {% if post_date != prev_post_date %}
-        	      <span align="right" class="text-success">@{{ post.date | date:"%A, %e %B %Y" | upcase }}</span>
+        	      <span align="center right" class="text-success"><h5>@{{ post.date | date:"%A, %e %B %Y" | upcase }}</h5></span>
       	           {% endif %}
       	           {% capture prev_post_date %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
                    </div>
