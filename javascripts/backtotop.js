@@ -1,4 +1,12 @@
 $(document).ready(function() {
+
+    alert('fdsafaf');
+    $('ul.nav > li').click(function (e) {
+            e.preventDefault();
+            $('ul.nav > li').removeClass('active');
+            $(this).addClass('active');                
+    });
+ 
     var $backtotop = $('#backtotop');
     var top = $(window).height() - $backtotop.height() - 90;
     $backtotop.css({ top: top, right: 100 });
@@ -13,6 +21,6 @@ $(document).ready(function() {
             } else {
                 $backtotop.fadeOut();
             }   
-    });                                                                        
+    });                                           
 });
 
