@@ -4,25 +4,13 @@ title: Home
 ---
 
 <!--<div class="container" id="container">-->
-	<ul>
         {% for post in site.posts limit: 15 %}
-           <div class="container">
+           <div class="hero-unit">
       	{% capture post_date %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
-        {% if post.post-link %}
-            <div class="container">
-                <a href="{{ post.post-link }}" title="External link">{{ post.title }}</a> 
-                <a class="glyph-permalink" href="{{ post.url }}" title="Permanent link to: '{{ post.title }}'">&diams;</a>
-                <ul class="tag_in_list_post">
-                    {% for tag in post.tags %}
-                    <li class="inline archive_list"><a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
-        {% else %}
             <div class="container">
                 <div class="row-fluid">
                    <div class="span5">
-                      <span><h2>{{ post.title }}</h2></span>
+                      <span><h2><a href="{{ post.url }}">{{ post.title }}</a></h2></span>
                     </div>
                    <div class="span6">
       	           {% if post_date != prev_post_date %}
@@ -39,13 +27,9 @@ title: Home
                     </ul>
                 </div>
 	    </div>
-        {% endif %}
-        {{ post.content }}
-      	   </div>
-      	{% if forloop.last == false %}
-      	   </hr>
-      	{% endif %}
+           <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+           <p><a href="{{ post.url }}">阅读更多</a></p>
+      	</div>
     	{% endfor %}
-  	</ul>
 <!--</div>-->
 
