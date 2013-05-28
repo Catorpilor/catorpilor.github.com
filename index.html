@@ -27,7 +27,7 @@ title: Home
                     </ul>
                 </div>
 	    </div>
-           {{ post.content |strip_html | truncatehtml:257 }}
+           {{ post.content |strip_html | truncate:257 }}
            <p></p>
            <p><a href="{{ post.url }}">阅读全文 <span>&raquo;</span></a></p>
       	</div>
