@@ -1,0 +1,14 @@
+---
+layout: post
+title: update Goagent
+categories:
+- Reading Diary
+tags:
+- goagent
+status: publish
+type: post
+published: true
+meta:
+  _publicize_pending: '1'
+---
+以前用1.8版本的goagent，翻墙时总是提示err10053.再加上因为斯巴达的召开，导致google太不给力可以说完全没法用，google code 里面搜索goagent直接被毙。好在<a href="http://github.com/goagent/goagent.git">github</a>的还可以，clone下来简单设置，终于google可以用了。

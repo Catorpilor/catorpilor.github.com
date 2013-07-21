@@ -1,0 +1,16 @@
+---
+layout: post
+title: another ordinary day
+tags:
+- 心情
+- daily report
+---
+before i wrote i had to review what i did today.....
+
+recently i had been reading coders at work on my way to work which was an interview style but still hadn't finish the first chapter.
+
+In the morning i just updated the newest version and assigned to modify the UI position and implement the listctrl's scrollbar.Talking about the scroll bar we did use the owner-draw type scroll bar cause the default one looks so ugly with the owner-draw style we can change the pic and format as we want.All right let's back to the point i just checked in the skinheaderctrl which downloaded from codeproject that extended from a CStaic class and implemented all the functions the default one has.So i just added some piece of code and turned out that it failed just because the rect of scroll bar was wrong and i needed to recalculated it tomorrow.
+
+Late in the day i just read the head first design pattern's the template method pattern.
+
+And that's all good night.

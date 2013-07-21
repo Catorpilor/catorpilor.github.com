@@ -1,0 +1,14 @@
+---
+layout: post
+title: another ordinary day
+tags:
+- 心情
+- daily report
+---
+Today i did two tasks.
+
+First was the record play pause and stop function.Yesterday i found on the internet that the API PlaySound has the functionality of pause,but turned out that it hasn't.So i used the MCI API mciSendString which takes the MCI_PLAY MCI_PAUSE MCI_STOP parameters to implement those functions.Cause i was lack of such MCI programming skills the whole progress seemed a little difficult ,and some time i will take a careful research about it.
+
+Second i fixed a bug which puzzled me for such a long time. Cause i used the <span style="color:#ff6600;">sendmessage</span> function to notify the parent window that something happened here and in the response function i did domodal a new child dialog and then caused a dead lock only if we killed the focus can we use the new dialog properly. When i changed the sendmessage to postmessage problem solved.The difference between those two functions were when we called sendmessge it didn't return until the dest thread finished its job but what postmessage did was on the contrary it just returned and didn't care about whether the dest finished or not.So we usually use sendmessage to synchronize the threads.Which point i had acknowledged for a while but i never come across it.And from now on i was deep impressed.Ehh that means well acknowledged.
+
+Time is late.That's all.good night.

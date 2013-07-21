@@ -1,0 +1,36 @@
+---
+layout: post
+title: First day of my report
+tags:
+- 心情
+- daily report
+---
+This is my first daily report.And it starts now!
+
+This morning on my way to company i just read the book&lt;The passionate Programmer&gt; after i read  'Let People hear your voice'  and 'Change the world' these two chapters and it made me think a lot. Not only it really happens to me but also let me realize that by some how i can be someone.And just in one chapter told me that Have a mission and make sure people know it.
+
+Just because it is my first report so i write a lot of my 'crap'. All right let's cut the crap and move to the point.
+
+I did not do any coding this morning and just a read two piece of code about multi-thread programming in C++.And also it was the rookie one.Which told me that if we want to write multiple thread code in C++,we just have to declare a static member function as the entry point of the thread.As it shows below
+
+<a href="http://zerothero.files.wordpress.com/2011/08/thread1.jpg"><img class="alignnone size-full wp-image-103" title="thread1" src="http://zerothero.files.wordpress.com/2011/08/thread1.jpg" alt="" /></a>
+
+This is the key point of thread programming.Later i just read another piece of code,and this time it just added the thread synchronization feature,in this example it imported the critical_section synchronization object and also listed all the other objects such as event mutex semaphore waitable timer.
+
+In the afternoon i was assigned to deal with my recently project 'SIP Phone''s newly bugs and update some features.
+
+Till the end of the day i just hotfixed the add contact bug. Just cause the contact list was stored in a xml file which has the format showed below:
+
+&lt;ContactGroup = "" /&gt;
+
+&lt;Contact = "jimmy" ... &gt;
+
+&lt;Attributes = "".../&gt;
+
+&lt;/Contact&gt;
+
+so every contact must have an group,As was designed it has a "All contacts" tab just listed all the contacts of the contact book file and other tabs just has the name of each group and listed the contacts it contains.So when we clicked the add contact button in the 'All contact' tab it failed. So  i added a new combo box in the contact edit dialog which listed all the exist groupnames.So now it works well.
+
+That's all,that's my first daily report.I know it looks a little bit simple and naive,but this is not the end all i gotta do is to make a one step at a day.
+
+Good night fellows!

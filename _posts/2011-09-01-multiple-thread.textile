@@ -1,0 +1,30 @@
+---
+layout: post
+title: multiple thread
+tags:
+- 心情
+- daily report
+---
+today i added the contact edit feature which we can edit the contact's profile and move it to another group.Talking about the contact movements its strictly relevant to the position in the xml file.For example if we have G={G0,G1,G2,G3} 4 tabs(hint G0 contains the sum of G1-3)
+
+G0={C11,C12,C13,C21,C22,C31,C32}
+
+G1={C11,C12,C13}
+
+G2={C21,C22}
+
+G3={C31,C32}
+
+Now if we want to C12 from G1 to G3 now all we have to do is to delete C12 from G1 and G0 then we add C12 to G3 and simultaneously we modified each group data (include contact count,and contact data etc) and the result looks like below
+
+G0={C11,C13,C21,C22,C31,C32,C12}
+
+G1={C11,C13}
+
+G2={C21,C22}
+
+G3={C31,C32,C12}
+
+After the test work done,i came up with a new problem since we want to copy file from one location to the destination we used the win api CopyFile which was simple just specify the source path and dest path.But turns out that was what i thought it dosen't work at all.Firstly i thought maybe it's because i used the multiple thread technique since in MFC all the dialog and its controler are draw in main thread so i create a new thread to do the file transfer thing,so i comments this piece of code and used the copyfile directly and failed again.i have to handle this tomorrow morning.
+
+All right that' all good night!

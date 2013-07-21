@@ -1,0 +1,9 @@
+---
+layout: post
+title: Design Pattern
+tags:
+- Design Pattern
+---
+Begin to learn Design Pattern.
+Now come to chapterIII the factory pattern.
+The former chapters' learning notes can <a href="http://www.google.com/notebook/#b=BDRu8DAoQ-9-a6oYm" title="Observer" target="_blank">find here</a>.Add also the related source code can <a href="http://code.google.com/p/jjg-memento/source/browse/trunk/Design+Pattern+Code/#Design%20Pattern%20Code%253Fstate%253Dclosed" title="Design Pattern code" target="_blank">find here</a>.

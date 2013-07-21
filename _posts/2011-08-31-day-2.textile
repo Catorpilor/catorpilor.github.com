@@ -1,0 +1,20 @@
+---
+layout: post
+title: Day 2
+tags:
+- 心情
+- daily report
+---
+Today i was disturbed by the house rent thing,so i did sucks in my daily job.
+
+In the morning i just fixed the contact delete feature bug test a little while and it worked well.
+
+After lunch i was assigned to add a new edit feature for contact and implement the message send thing.
+
+But i was confused about the contact edit thing that currently the first tab of the contact dialog listed all the contacts in the contactlist.xml consequently . If we change C2 in G2 to G1,we have to delete C2 in G2 and add C2 in G1 etc..this was such a mess, and i was not st my best..so i postponed it ..i'm gonna fix this tomorrow morning!!
+
+It seems to me that i gotta handle the house thing first cause u know it's very annoying!
+
+that's all good night all.
+
+&nbsp;

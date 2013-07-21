@@ -1,0 +1,102 @@
+---
+layout: post
+title: The Pragmatic Programmer I
+tags:
+- reading
+---
+Your knowledge portfolio
+
+An Investment in knowledge always pays the best interest. --Ben Franklin
+
+The Early bird get the worm,but what happens to the early worm.
+
+Your knowledge and experiences are your most important professional assets.which turn out to be expiring assets.
+
+Managing a knowledge portfolio is very similar to managing a financial portfolio:
+
+1. 1. Serious investors invest regularly—as a habit.
+2. 2. Diversification is the key to long-term success.
+3. 3. Smart investors balance their portfolios between conservative and high-risk, high-reward investments.
+4. 4. Investors try to buy low and sell high for maximum return.
+5. 5. Portfolios should be reviewed and rebalanced periodically.
+
+So come to the conclusion Tip 8 Invest Regularly in your knowledge portfolio.
+
+Here come a few  suggestions for the goal.
+
+1.1   Learn at least one new language every year.
+
+2.2 Read a technical book each quarter.
+
+3.3 Read nontechnical books, too.
+
+It is important to remember that computers are used by people—people whose needs you are trying to satisfy. Don't forget the human       side of the equation.
+
+4.4 Take classes.
+
+5.5 Participate in local user groups.
+
+6.6 Experiment with different environments.
+
+7.7 Stay current.  Subscribe to trade magazines and other journals
+
+8.8 Get wired.
+
+All of this reading and researching takes time, and time is already in short supply. So you need to plan ahead. Always have something to read in an otherwise dead moment.
+
+Critical thinking.
+
+The last important point is to think critically about what you read and hear.
+
+There comes the conclusion Tip 9 Critically Analyze What You Read and Hear
+
+&nbsp;
+
+Communicate!
+
+I believe that it is better to be looked over than it is to be overlooked. --Mae West
+
+<strong>Know What You Want to Say</strong>
+
+Plan what you want to say. Write an outline. Then ask yourself, "Does this get across whatever I'm trying to say?" Refine it until it does.
+
+This approach is not just applicable to writing documents. When you're faced with an important meeting or a phone call with a major client, jot
+down the ideas you want to communicate, and plan a couple of strategiesfor getting them across.
+
+<strong>Know Your Audience </strong>
+
+&nbsp;
+
+&nbsp;
+
+You're communicating only if you're conveying information. To do that, you need to understand the needs, interests, and capabilities of your audience.
+
+<strong>Choose Your Moment </strong>
+
+As part of understanding what your audience needs to hear, you need to work out what their priorities are.
+
+<strong>Choose a Style </strong>
+
+Adjust the style of your delivery to suit your audience. Remember, however, that you are half of the communication transaction.
+
+<strong>Make It Look Good</strong>
+
+Your ideas are important. They deserve a good-looking vehicle to convey them to your audience.Any chef will tell you that you can slave in the kitchen for hours only to ruin your efforts with poor presentation.
+
+<strong>Involve Your Audience </strong>
+
+If possible, involve your readers with early drafts of your document. Get their feedback, and pick their brains. You'll build a good working relationship, and you'll probably produce a better document in the process.
+
+<strong>Be a Listener </strong>
+
+There's one technique that you must use if you want people to listen to you: <em>listen to them.</em>
+
+Encourage people to talk by asking questions, or have them summarize what you tell them. Turn the meeting into a dialog, and you'll make your point more effectively. Who knows, you might even learn something.
+
+<strong>Get Back to People </strong>
+
+In the rush of everyday life, it's easy to forget. Always respond to e-mails and voice mails, even if the response is simply "I'll get back to you later." Keeping people informed makes them far more forgiving of the occasional slip, and makes them feel that you haven't forgotten them.
+
+So there came the conclusion Tip 10 It's both what you say and the way you say.
+
+&nbsp;
