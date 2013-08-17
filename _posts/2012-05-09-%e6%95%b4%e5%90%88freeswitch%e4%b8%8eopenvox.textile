@@ -1,7 +1,0 @@
----
-layout: post
-title: 整合freeswitch与openvox
-tags:
-- freeswitch
----
-<p>最近项目需要在服务器上整合freeswitch与openvox。</p><p>google后按照上面的方式一切都进行的非常顺利</p><p>知道安装mod_openzap时，出错l<strong>ibtool: install: error: cannot install `ozmod_zt.la' to a directory not ending in /usr/local/openzap/mod</strong></p><p>再次google后发现<a href="http://wiki.freeswitch.org/wiki/OpenZAP#OpenZAP_Compilation">wiki</a>里面的方法跟刚才的结果一样，但是在freeswitch的<a href="http://jira.freeswitch.org/browse/OPENZAP-69">jira</a>里面有人提到了这个问题</p><p>在make mod_openzap-install之前 cd ../..进入到freeswitch目录中，再make install 即可</p>

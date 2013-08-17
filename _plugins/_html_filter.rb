@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'nokogiri'
+#require 'nokogiri'
 
 module Liquid
   module StandardFilters

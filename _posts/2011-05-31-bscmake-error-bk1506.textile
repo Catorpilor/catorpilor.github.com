@@ -1,8 +1,0 @@
----
-layout: post
-title: BSCMAKE  error BK1506
-tags:
-- cplusplus
----
-today when i was building a tinyxml solution,i encounter some dizzy problem that were '<a href="http://zh-cn.w3support.net/index.php?db=so&amp;id=109281" title="sbr" target="_blank">can't find a *.sbr file in the current debug directory'</a> and '<a href="http://blog.csdn.net/mdjtf/archive/2010/05/23/5617292.aspx" target="_blank">cl.exe returned got error 2</a>'.'cause it was the first time i met this kind of  problem,so i only had to google it.After digging a while for such results i found some useful info that could solve my problem. Later i found that these 2 problems were related to each other.Because the output window couldn't give me some useful information which took me a long time to find out the reason that cause these errors. So i follow some instructions on google i checked the BuildLog.htm file which gave me a specific description of that error which was cause by the incompatible between '\Mdt' and '\clr' option.Then i just changed the '\MDt' to '\MDd', clean and rebuild the solution.Aha..problem solved. 
-All right that's it.At the last the two links are the useful results that i googled.
