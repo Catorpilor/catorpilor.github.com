@@ -1,0 +1,23 @@
+---
+layout: post
+title: 最近看的书
+date: 2013-07-21 07:47
+post-link:
+tags:
+- reading
+---
+
+p. 把最近在看的书整理了一下。
+
+h4. 技术
+
+- ["effective javascript":http://book.douban.com/subject/10494340/] := 经典
+- ["craking the coding interview":http://book.douban.com/subject/4941558/] := 强力推荐的面试书籍
+- ["c++ primer 5th":http://book.douban.com/subject/10505113/] := Cpp经典书籍第五版中加入了Cpp0x的标准
+
+h4. 非技术
+
+- ["拖延心理学":http://book.douban.com/subject/4180711/] := 有拖延习惯的人必读的书。
+
+bq. Chris
+

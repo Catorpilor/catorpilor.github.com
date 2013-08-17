@@ -1,0 +1,14 @@
+---
+layout: post
+title: CLRS Learning Note
+date: 2013-07-21 07:02
+post-link:
+tags:
+- algorithm
+- reading
+---
+
+p. 最近在跟着coursea上algo公开课的salyybuss阅读CLRS.
+
+bq. Chris
+

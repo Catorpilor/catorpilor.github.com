@@ -1,0 +1,19 @@
+---
+layout: post
+title: mongoose更新数组条目中文问题
+date: 2013-07-22 17:13
+post-link:
+tags:
+- mongoose
+---
+
+h5. 今天真是太诡异了，神马奇葩的问题都能遇到。
+
+p(text-error). 用mongoose进行数组更新操作，collection里面的记录为{'cname':'赵五'}，以及{'cname':'赵四'}的两条数据，根据cname的值进行update操作，指定更新cname='赵五'的这条数据时，发现记录里面只要是cname的值以'赵'开头的都被更新了，而我在mongodb命令行下执行同样的动作木有出现这种问题。
+
+p. 网上搜索木有结果后没办法只能用老方法先findOne后，在对该记录的数组进行一遍查找找到cname为指定值的item进行相应的更新操作，这时候奇葩的事情又出现了我在比较cname的值时候'======'操作符依然把[_赵四,赵五_]，当成相同的内容而全部更新掉，换成'==='后，终于只更新了指定值的内容。
+
+p. 目前来说产生这个问题的原因还木有找到只能用这种方法来解决，接下来再好好研究研究["effective javascript":http://book.douban.com/subject/10494340/].
+
+bq. Chris
+

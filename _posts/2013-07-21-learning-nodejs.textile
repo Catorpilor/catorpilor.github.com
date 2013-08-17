@@ -1,13 +1,51 @@
 ---
 layout: post
 title: Learning Nodejs
-date: 2013-07-21 06:52
+date: 2013-07-21 15:14
 post-link:
 tags:
 - nodejs
 ---
 
-h4. 说说最近用Nodejs做的2个项目。
+h3. 1.freeswitch_io 
+
+p(text-warning). 研究["Nodejs":http://nodejs.org]也有段时间了，最初接触它是在去年参见freeswitch的讲座时别人用它和["socket.io":http://socket.io]做的一个实时展示的东东吸引了我的注意。再加上去年用ESL实现了一个C/S版本的Agentmap大屏展示再加上对用C++写界面实在有点[_(深恶痛绝, ^^)_]就想学着用它去实现一个B/S版本的东东。
+
+p((. 大概用了一个月时间实现了Agentmap，在这段时间对Nodejs,socket.io以及css和javascript有了一个大体的了解[__(在此感谢强哥童鞋对我的帮助)__],由于自己的前端水平实在太水所以界面做的相当丑陋。它的基本功能就是通过socket与freeswitch进行通信，监听了freeswitch的channel_answer/create/destory等事件，当有channel事件发生时服务端的socket.io发出对应的事件，客户端socket.io监听这些事件并在事件来时通过jquery做出相应的演示。
+
+h3. 2.MiniFund [!https://david-dm.org/catorpilor/miniFund.png!:http://david-dm.org/catorpilor/miniFund]
+
+p. 在这个Demo完成之后，想着继续做点东西来练练手。正好这段时间一起吃饭的同事提到说每天中午吃饭结账时好麻烦，最好能有个管理平台来统一结算。考虑好需求后便准备拿这个项目练手了。
+
+h5. 需求如下
+
+- 注册/登录模块 := 处理用户注册/登录
+- 圈子模块 := 引入组概念，一个组由一个组长和若干组员构成
+ 	组长功能: 组长可更新组员的费用(花费/充值申请)，目前规定组长是唯一的。
+	组员功能: 组员可向组长发送充值/退组申请。
+- 信息显示模块 := 实时显示更新信息(参与人、地点、时间、费用等信息)
+- 编辑模块 := 编辑用户基本信息，查看用户充值/消费记录.
+- 邮件模块 := 组长更新信息时会对参与者发邮件
+
+p. 需求确认之后，就准备开始coding了。系统框架就继续使用["MVC":http://zh.wikipedia.org/zh-cn/MVC]，前端框架采用["expressjs":http://expressjs.com/],后台数据库用["mongodb":http://www.mongodb.org/],前端模版继续使用["ejs":http://embeddedjs.com/‎],CSS样式的话使用较为熟悉而且拿过来就可以使用的["bootstrap":http://getbootstrap.com/2.3.2/].
+
+p. 经过大概近2月的coding及测试，系统于今年3月份上线内部开始使用。^ ^.
+
+
+bq. miniFund小结：
+	1. 从项目中学到了神马
+		<span class="badge badge-success">mongodb</span>. 这个系统创建了6张表，对表的基本操作有了一定的了解<code>find,findOne,update,updateOne</code>以及一些原子操作<code>gt,lt,push,pop</code>等。
+		<span class="badge badge-success">MVC</span>. 对这架构有了进一步的了解。
+		<span class="badge badge-success">Debug</span> 调试过程中，对<code>node-inspector</code>有了一定的了解 
+	2. 不足
+		<span class="badge badge-important">mongodb</span> 第一次较为系统的在nodejs中使用它，用了<code>mongodb-naive</code>这个模块,使得在操作表中引入了很多层的CALLBACK，这对调试造成了非常大的困难。
+		<span class="badge badge-important">异步处理</span> 在Nodejs中大部分都是异步函数，有时候我们需要获得前一个函数的返回值后在判断是该进行哪一步操作，这块当时没有引入<code>event-proxy</code>模块，导致代码非常ugly而且CALLBACK嵌套CALLBACK的操作也违背了nodejs的初衷。
+
+h3. 3. conference_paltform [!https://david-dm.org/catorpilor/conference_sys.png!:http://david-dm.org/catorpilor/conference_sys]
+   
+p. 未完待续。。。
+
+
 
 bq. Chris
 
