@@ -1,25 +1,25 @@
 ---
 layout: default
 ---
-<h2 class="post_title">{{page.title}}</h2>
+<h2 class="post_title">{{ page.title }}</h2>
 <ul>
-  {% for post in site.posts %}
-  {% for tag in post.tags %}
-  {% if tag == page.tag %}
-  <div class="container">
-   <li>
-     <time style="color:#666;font-size:11px;" datetime='{{post.date | date: "%Y-%m-%d"}}'>{{post.date | date: "%m/%d/%y"}}</time> 
-     <a style="font-size:18px;" href='{{post.url}}'>{{post.title}}</a>
-     <div class="nav-collapse">
-        <ul class="nav">
-          {% for tag in post.tags %}
-            <li class="inline label label-info"><a style="color:#FFF;" href="/tag/{{ tag }}">{{ tag }}</a></li>
-          {% endfor %}
-       </ul>
-     </div>
-  </li>
-  </div>
-  {% endif %}
-  {% endfor %}
-  {% endfor %}
+{% for post in site.posts %}
+{% for tag in post.tags %}
+{% if tag == page.tag %}
+    <div class="container">
+        <li>
+            <time style="color:#666;font-size:11px;" datetime='{{post.date | date: "%Y-%m-%d"}}'>{{post.date | date: "%m/%d/%y"}}</time> 
+            <a style="font-size:18px;" href='{{post.url}}'>{{post.title}}</a>
+            <div class="nav-collapse">
+                <ul class="nav">
+                {% for tag in post.tags %}
+                    <li class="inline label label-info"><a style="color:#FFF;" href="/tag/{{ tag }}">{{ tag }}</a></li>
+                {% endfor %}
+                </ul>
+            </div>
+        </li>
+    </div>
+{% endif %}
+{% endfor %}
+{% endfor %}
 </ul>

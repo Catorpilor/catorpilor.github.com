@@ -9,3 +9,13 @@ destination:        ./_site
 #
 # post to display per pages
 paginate: 5
+
+navigation:
+- title: Archives
+  url: /pages/archives.html
+- title: Tags
+  url: /tags.html
+- title: Projects
+  url: /pages/projects.html
+- title: About
+  url: /pages/about.html

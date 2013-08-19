@@ -13,6 +13,7 @@
    </style>
 
    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css"/>
+   <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.icon-large.min.css"/>
    <!--<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap-responsive.min.css"/>-->
    <!--<script src="/javascripts/bootstrap.min.js"></script>-->
 
@@ -25,12 +26,25 @@
                <a class="brand" href="{{ site.baseurl }}">Home</a>
                <div class="nav-collapse">
                    <ul class="nav">
-                       <li><a href="/pages/archives.html">Archives</a></li>
+                       {% for navigation in site.navigation %}
+                        {% if navigation.url == page.url %}
+                        <li class="active"><a href="{{ navigation.url }}">{{ navigation.title }}</a></li>
+                        {% else %}
+                        <li><a href="{{ navigation.url }}">{{ navigation.title }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                      <!--<li><a href="/pages/archives.html">Archives</a></li>
+                       <li><a href="/tags.html">Tags</a></li>
                        <li><a  href="/pages/projects.html">Projects</a></li>
                        <li><a href="/pages/about.html">About</a></li>
-                       <li><a href="/atom.xml">Rss</a></li>
+                       <li><a href="/atom.xml">Rss</a></li>-->
+
                    </ul>
-               </div>
+                   <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/atom.xml"><i class="icon-rss"></i></a></li>
+                        <li><a href="http://github.com/Maxfan-zone" target="_blank"><i class="icon-github"></i></a></li>
+                   </ul>
+              </div>
            </div>
      </div>
   </div>
