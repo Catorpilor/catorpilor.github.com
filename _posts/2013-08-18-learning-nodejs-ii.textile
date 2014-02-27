@@ -1,13 +1,16 @@
 ---
 layout: post
 title: learning-nodejs-II
-date: 2013-08-18 09:50
+date: 2014-02-27 11:04
 post-link:
 tags:
 - nodejs
 - mongoose
 - freeswitch
 ---
+p. 接"上文":http://catorpilor.github.io/2013/07/21/learning-nodejs.html
+
+
 
 bq. Chris
 
