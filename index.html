@@ -10,7 +10,7 @@ title: Home
   <p class="blog-post-meta">
     <i class="glyphicon glyphicon-calendar"></i> {{ post.date | date_to_string }} | <i class="glyphicon glyphicon-user"></i> <strong>Chris</strong>
   </p>
-  <p class="blog-post-meta">Tags: 
+  <p class="blog-post-meta"><i class="glyphicon glyphicon-tag"></i>
     {% for tag in post.tags %}
       <span class="label label-info"><a class="blog-nav-item"  href="/tags/{{ tag }}">{{ tag }}</a></span>
     {% endfor %}
