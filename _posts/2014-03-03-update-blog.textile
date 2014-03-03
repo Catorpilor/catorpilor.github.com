@@ -1,0 +1,13 @@
+---
+layout: post
+title: Update Blog Theme
+date: 2014-03-03 17:13
+post-link:
+tags:
+- bootstrap
+---
+
+许久没有更新Blog了，打开后越瞅越难看，一点也不符合小清新的风格 ^ ^.正好这几天在改版conference["Migrating to V3.X":http://getbootstrap.com/migration/]就一并把blog升级下。原theme是自己瞎折腾的看着不够清爽，这次采用了["Bootstrap blog template":http://getbootstrap.com/examples/blog/].,做了一些修改后新版的Blog就新鲜出炉了。
+PS.在更新前截图做了留念。
+!=(resize)/../accessary/2014/old_blog.png!
+
