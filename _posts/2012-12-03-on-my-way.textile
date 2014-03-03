@@ -10,10 +10,8 @@ tags:
 p. 十一出游到现在也已经过去2个月了，一直想写点神马来回顾一下这次出行从策划到结束的点点滴滴。真正坐下来才发现要一次写完有些困难，那就一块一块来写吧~ (^_^)
 
 p. 
-|_. |_. |_. |
-|!/../accessary/2012/12/03/wuxi.jpg!|!/../accessary/2012/12/03/wuxi.jpg!|!/../accessary/2012/12/03/wuxi.jpg!|
-|!/../accessary/2012/12/03/wuxi.jpg!|!/../accessary/2012/12/03/wuxi.jpg!|!/../accessary/2012/12/03/wuxi.jpg!|
-|!/../accessary/2012/12/03/wuxi.jpg!|!/../accessary/2012/12/03/wuxi.jpg!|!/../accessary/2012/12/03/wuxi.jpg!|
+!=(resize)/../accessary/2012/12/03/wuxi.jpg!
+
 
 
 
