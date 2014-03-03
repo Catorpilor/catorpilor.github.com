@@ -4,19 +4,17 @@ layout: default
 {% if page.post-link %}
 <h1><a href="{{ page.post-link }}" title="External link">{{ page.title }}</a></h1>
 {% else %}
-    <span><h2>{{ page.title }}</h2></span>
-		<p class="blog-post-meta">
-      {% for tag in page.tags %}
-          <span class="label label-info"><a href="/tags/{{ tag }}">{{ tag }}</a></span>
-      {% endfor %}
-    </p>
+<div class="blog-post">
+  <div class="blog-post-title"><h2>{{ page.title }}</h2></div>
+	<p class="blog-post-meta">
+  {% for tag in page.tags %}
+    <span class="label label-info"><a href="/tags/{{ tag }}">{{ tag }}</a></span>
+  {% endfor %}
+  </p>
 {% endif %}
-
 {{ content }}
-
-
 <div align="right" class="date-container">{{ page.date | date:"%e %B %Y @ %I:%M%p"}}</div>
-
+</div>
  <div id="disqus_thread"></div>
  <script type="text/javascript">
  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
