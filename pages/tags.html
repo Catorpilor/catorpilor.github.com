@@ -1,0 +1,25 @@
+---
+layout: default
+title: Tags
+---
+<br/>
+
+<p>
+{% for tag in site.tags %}
+<a class="badge badge-success" href="#{{ tag[0] }}">{{ tag[0] }}</a>
+{% endfor %}
+</p>
+
+{% for tag in site.tags %}
+<h3 id="{{ tag[0] }}">{{ tag[0] }}</h3>
+<ul>
+    {% for post in site.posts %}
+    {% for posttags in post.tags %}
+    {% if posttags == tag[0] %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+</ul>
+{% endfor %}
+    

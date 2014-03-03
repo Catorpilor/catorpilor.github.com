@@ -8,9 +8,10 @@ tags:
 - mongoose
 - freeswitch
 ---
-p. 接["上文":http://catorpilor.github.io/2013/07/21/learning-nodejs.html]中提及的conference_platform:
-这是一个基于["socket.io":http://socket.io],["express":http://expressjs.com]以及["Freeswitch":http://freeswitch.org]的会议管理平台。采用了HTML5以及bootstrap的responsive模式，自适应于各种尺寸的浏览器.
-该平台支持的功能如下:
+
+ 接["上文":http://catorpilor.github.io/2013/07/21/learning-nodejs.html]中提及的conference_platform:
+ 这是一个基于["socket.io":http://socket.io],["express":http://expressjs.com]以及["Freeswitch":http://freeswitch.org]的会议管理平台。采用了HTML5以及bootstrap的responsive模式，自适应于各种尺寸的浏览器.
+ 该平台支持的功能如下
 # 联系人导入、导出
 # 预约会议
 ## 自动外呼会议
@@ -22,20 +23,20 @@ p. 接["上文":http://catorpilor.github.io/2013/07/21/learning-nodejs.html]中�
 ## 静音
 ## 实时显示与会人状态 _静音,发言_等
 
-这是一个典型的MVC应用，在model中定义各种数据模型，再通过controller展示不同的view。相比起第一个应用miniFund,conference没有采用偏底层的raw-mongodb而是用了封装的mongoose,操作来说简化了不少，功能也更加丰富。会议平台的实时性主要是通过socket.io来实现的，通过自定义事件来监听用户动作在客户端做出反应。开发过程中遇到的tricky part是在预约会议时需要定时任务，当时不知道node-cron这个模块，所有的定时任务都是通过程序修改crontab文件实现，而且涉及到了取消会议的情况就需要删除相应的crontab内容，由于对linux命令不太熟悉各种查资料。总之这块是当时遇到的最大的坑，幸运的是这些都解决了。
-ps.删除crontab中某个文件操作如下 _关键词这里假设为Key_ :
+<p>这是一个典型的MVC应用，在model中定义各种数据模型，再通过controller展示不同的view。相比起第一个应用miniFund,conference没有采用偏底层的raw-mongodb而是用了封装的mongoose,操作来说简化了不少，功能也更加丰富。会议平台的实时性主要是通过socket.io来实现的，通过自定义事件来监听用户动作在客户端做出反应。开发过程中遇到的tricky part是在预约会议时需要定时任务，当时不知道node-cron这个模块，所有的定时任务都是通过程序修改crontab文件实现，而且涉及到了取消会议的情况就需要删除相应的crontab内容，由于对linux命令不太熟悉各种查资料。总之这块是当时遇到的最大的坑，幸运的是这些都解决了。</p>
+<p>ps.删除crontab中某个文件操作如下 _关键词这里假设为Key_ :
 <code>
-    !/usr/bin/bash
     crontab -l | grep -v key | cut -d\":\" -f2 | crontab -
 </code>
-登录后界面如下所示:
-!=/../accessary/2013/conference.png!
-点击预约会议后:
-!=/../accessary/2013/conference_reserve.png!
-预约成功后显示如下:
-!=/../accessary/2013/reserved_meeting.png!
-实时会议监控:
-!=/../accessary/2013/monitor.png!
+</p>
+<p>登录后界面如下所示:</p>
+!=(resize)/../accessary/2013/conference.png!
+<p>点击预约会议后:</p>
+!=(resize)/../accessary/2013/conference_reserve.png!
+<p>预约成功后显示如下:</p>
+!=(resize)/../accessary/2013/reserved_meeting.png!
+<p>实时会议监控:</p>
+!=(resize)/../accessary/2013/monitor.png!
 
 
 

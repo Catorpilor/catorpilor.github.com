@@ -11,10 +11,10 @@ destination:        ./_site
 paginate: 5
 
 navigation:
-- title: Archives
-  url: /pages/archives.html
+- title: Home
+  url: /
 - title: Tags
-  url: /tags.html
+  url: /pages/tags.html
 - title: Projects
   url: /pages/projects.html
 - title: About

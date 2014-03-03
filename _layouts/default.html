@@ -11,16 +11,40 @@
    <style type="text/css">
 	a{text-decoration: none}
    </style>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-   <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css"/>
-   <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.icon-large.min.css"/>
-   <!--<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap-responsive.min.css"/>-->
+   <!--<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css"/>-->
+   <link rel="stylesheet" type="text/css" href="/public/stylesheets/bootstrap.min.css"/>
+   <link rel="stylesheet" type="text/css" href="/public/stylesheets/blog.css" />
+   <!--<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.icon-large.min.css"/>
+   <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap-responsive.min.css"/>-->
    <!--<script src="/javascripts/bootstrap.min.js"></script>-->
 
 </head>
 <body>
+  <div class="blog-masthead">
+    <div class="container">
+      <nav class="blog-nav">
+        {% for navigation in site.navigation %}
+          {% if navigation.url == page.url %}
+            <a class="blog-nav-item active" href="{{ navigation.url }}">{{ navigation.title }}</a>
+          {% else %}
+            <a class="blog-nav-item" href="{{ navigation.url }}">{{ navigation.title }}</a>
+          {% endif %}
+        {% endfor %}
+        <!-- <a class="blog-nav-item active" href="#">Home</a>
+        <a class="blog-nav-item" href="#">New features</a>
+        <a class="blog-nav-item" href="#">Press</a>
+        <a class="blog-nav-item" href="#">New hires</a>
+        <a class="blog-nav-item" href="#">About</a> -->
+      </nav>
+    </div>
+  </div>
 
-   <div class="navbar navbar-inverse navbar-fixed-top">
+   <!-- <div class="navbar navbar-inverse navbar-fixed-top">
        <div class="navbar-inner">
            <div class="container">
                <a class="brand" href="{{ site.baseurl }}">Home</a>
@@ -33,11 +57,11 @@
                         <li><a href="{{ navigation.url }}">{{ navigation.title }}</a></li>
                         {% endif %}
                         {% endfor %}
-                      <!--<li><a href="/pages/archives.html">Archives</a></li>
+                      <li><a href="/pages/archives.html">Archives</a></li>
                        <li><a href="/tags.html">Tags</a></li>
                        <li><a  href="/pages/projects.html">Projects</a></li>
                        <li><a href="/pages/about.html">About</a></li>
-                       <li><a href="/atom.xml">Rss</a></li>-->
+                       <li><a href="/atom.xml">Rss</a></li>
 
                    </ul>
                    <ul class="nav navbar-nav navbar-right">
@@ -53,19 +77,77 @@
        <h1 style="font-size:60px;text-align:left;font-weight:bold;letter-spacing:-1px;line-height:1;">Code Complement</h1>
        <p style="font-size:24px;text-align:left;font-weight:300;margin-bottom:20px;" class="lead">Make few steps every day.
    </div>
- </header>
+ </header> -->
 
-  <div id="container" class="container">
+  <div class="container">
+    <div class="blog-header">
+        <h1 class="blog-title">Coder At Work</h1>
+        <p class="lead blog-description">Make few steps everyday.</p>
+    </div>
   
-  
-    <section>
-      {{ content }}
-    </section>
-
-    <hr/>
-   <footer>
-        <p class="text-center"><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> | Copyright 2011 - {{site.time | date:"%Y"}} by <a href="http://catorpilor.github.io">Chris Jiao</a> | <span class="label label-info">{{site.time | date:"%Y-%m-%d %H:%M:%S"}}</span></small></p>
-    </footer>
+    <div class="row">
+      <div class="col-sm-8 blog-main">
+        {{ content }}
+      </div>
+      <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>I'm a  <em>lazy men.</em>.
+              Enthusiastic in learning new stuff.</p>
+            <p>Work hard,Play hardrrrr</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Archives</h4>
+            <ol class="list-unstyled">
+              <!-- <li><a href="#">January 2014</a></li>
+              <li><a href="#">December 2013</a></li>
+              <li><a href="#">November 2013</a></li>
+              <li><a href="#">October 2013</a></li>
+              <li><a href="#">September 2013</a></li>
+              <li><a href="#">August 2013</a></li>
+              <li><a href="#">July 2013</a></li>
+              <li><a href="#">June 2013</a></li>
+              <li><a href="#">May 2013</a></li>
+              <li><a href="#">April 2013</a></li>
+              <li><a href="#">March 2013</a></li>
+              <li><a href="#">February 2013</a></li> -->
+              {% for post in site.posts %}
+              {% unless post.next %}
+              <h1>{{ post.date | date: '%Y' }}</h1>
+              {% else %}
+              {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+              {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+              {% if year != nyear %}
+              <br>
+              <h1>{{ post.date | date: '%Y' }}</h1>
+              {% endif %}
+              {% endunless %}
+              <li><span class="post_date">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <!-- <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="#"><img src="/public/images/github_icon.png" alt="github">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ol> -->
+            <h4>Contact Me</h4>
+            <div id="contact-info">
+              <div id="contact-img">
+              <a href="mailto:jiaojg@outlook.com"><img alt="Email icon" src="/public/images/email_icon.png" /></a>
+              <a href="https://github.com/catorpilor"><img alt="Github icon" src="/public/images/github_icon.png" /></a>
+              <a href="http://twitter.com/L8ker"><img alt="Twitter icon" src="/public/images/twitter_icon.png" /></a></div>
+              </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+   <div class="blog-footer">
+        <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> | Copyright 2011 - {{site.time | date:"%Y"}} by <a href="http://catorpilor.github.io">Chris Jiao</a> | <span class="label label-info">{{site.time | date:"%Y-%m-%d %H:%M:%S"}}</span></small></p>
+    </div>
 	
 	
   </div>

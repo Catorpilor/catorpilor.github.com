@@ -1,0 +1,13 @@
+---
+layout: post
+title: iOS Learning
+date: 2014-02-27 15:44
+post-link:
+tags:
+- ios
+---
+于今年2月初开始学习iOS开发，过年时开始看Stanford cs193p 2011 fall视频资料。由于当时手边木有mac看老师敲代码也没法练习只是混了个眼熟，对ios开发有了基本的认识。回来后也继续是视频+coding+["ios develop library":https://developer.apple.com/library/ios/navigation/]，总之一切都按照自己的计划一步步执行的，希望把它坚持下去。
+
+
+bq. Chris
+

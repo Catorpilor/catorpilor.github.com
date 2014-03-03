@@ -2,3 +2,5 @@ _drafts/
 _site/
 *.swp
 *.sh
+accessary/.DS_Store
+.DS_Store
