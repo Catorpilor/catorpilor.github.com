@@ -1,4 +1,4 @@
 #! /usr/bin/bash
 
-cp -a ./_site/tags/ ./
+cp -a ./_site/tags/ ./tags/
 

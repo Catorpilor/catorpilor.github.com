@@ -2,11 +2,10 @@
 layout: default
 title: Tags
 ---
-<br/>
-
-<p>
+<h2 class="blog-post-title">{{ page.title }}</h2>
+<p class="blog-post-meta">
 {% for tag in site.tags %}
-<a class="badge badge-success" href="#{{ tag[0] }}">{{ tag[0] }}</a>
+<a class="label label-primary" href="#{{ tag[0] }}">{{ tag[0] }}</a>
 {% endfor %}
 </p>
 
