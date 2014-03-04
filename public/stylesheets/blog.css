@@ -76,7 +76,7 @@ h6, .h6 {
 }
 
 .resize{
-    width:617px; /* you can use % */
+    max-width:100%; /* you can use % */
     height: auto;
 }
 
