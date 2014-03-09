@@ -10,7 +10,7 @@ tags:
 
 p. 上周五在浏览["CocoaChina":http://www.cocoachina.com]时发现了一篇不错的["文章":http://www.cocoachina.com/applenews/devnews/2014/0224/7868.html]是翻译过的,对于技术类的blog我更倾向于原味的遂跑去作者["Blog":http://www.raywenderlich.com/55384/ios-7-best-practices-part-1]从头到尾跟着一步步敲代码照猫画虎完成了这个App。
 启动界面:
-!=/../accessary/2014/sw-sceen01.png!
+!=(resize)/../accessary/2014/sw-sceen01.png!
 
 这跟作者博客所演示的那个还有一定的区别，原因在于构建该App的一个模块["mantle 1.4":https://github.com/MantleFramework/Mantle/]在处理json中含有array-lick的数据时出错,相关内容请看这个["issue":https://github.com/MantleFramework/Mantle/issues/257]导致从["openweathermap api":http://api.openweathermap.org/data/2.5/weather?lat=39.9&lon=116.4&units=imperial]所取到的数据无法完全被解析。
 这个app主要用到了cocoapod里面的如下几个模块:
