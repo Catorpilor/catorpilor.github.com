@@ -1,0 +1,34 @@
+---
+layout: post
+title: Simple Weather App
+date: 2014-03-09 16:46
+post-link:
+tags:
+- ios
+- pod
+---
+
+p. 上周五在浏览["CocoaChina":http://www.cocoachina.com]时发现了一篇不错的["文章":http://www.cocoachina.com/applenews/devnews/2014/0224/7868.html]是翻译过的,对于技术类的blog我更倾向于原味的遂跑去作者["Blog":http://www.raywenderlich.com/55384/ios-7-best-practices-part-1]从头到尾跟着一步步敲代码照猫画虎完成了这个App。
+启动界面:
+!=/../accessary/2014/sw-sceen01.png!
+
+这跟作者博客所演示的那个还有一定的区别，原因在于构建该App的一个模块["mantle 1.4":https://github.com/MantleFramework/Mantle/]在处理json中含有array-lick的数据时出错,相关内容请看这个["issue":https://github.com/MantleFramework/Mantle/issues/257]导致从["openweathermap api":http://api.openweathermap.org/data/2.5/weather?lat=39.9&lon=116.4&units=imperial]所取到的数据无法完全被解析。
+这个app主要用到了cocoapod里面的如下几个模块:
+["Mantle":https://github.com/github/Mantle] is a project by the Github team that helps remove all of the boilerplate code that Objective-C requires to turn JSON data into NSObject subclasses. Mantle also does value transformation, which is a fancy way to turn JSON primitive values (strings, ints, floats) into complex values like NSDate, NSURL, or even custom classes.
+["LBBlurredImage":https://github.com/lukabernardi/LBBlurredImage] is a simple project that extends UIImageView and makes blurring images a breeze. You’ll be creating a fancy blur with just a single line of code. If you’re interested in seeing how the blur works, check out the ["source code":https://github.com/lukabernardi/LBBlurredImage/blob/master/LBBlurredImage/UIImageView%2BLBBlurredImage.m#L25-88].
+["TSMessages":https://github.com/toursprung/TSMessages] is another wonderfully simple library that takes care of displaying overlay alerts and notifications. When presenting error messages that don’t directly impact the user, it’s better to present an overlay instead of a modal view (like UIAlertView) so that you irritate the user as little as possible.
+["ReactiveCocoa":https://github.com/ReactiveCocoa/ReactiveCocoa] also made by the Github team. ReactiveCocoa brings functional programming to Objective-C by following patterns introduced by ["Reactive Extensions":http://msdn.microsoft.com/en-us/data/gg577609.aspx] in .NET.
+其视图结构主要由3层构成:
+# UIImageview *backgroudImg
+# UIImageview *bluredImg
+# UITableView *tableview
+
+如图所示:
+!=(resize)/../accessary/2014/viewlayers.jpg!
+整个tutorial我认为tricky part就是reactivecocoa,第一次见到头很大,以下文中关于reactivecocoa的相关链接:
+# ["Basic operators":https://github.com/ReactiveCocoa/ReactiveCocoa/blob/master/Documentation/BasicOperators.md]
+# ["Best practices":https://github.com/ReactiveCocoa/ReactiveCocoa/blob/master/Documentation/DesignGuidelines.md#best-practices]
+# ["Start tutorial":http://www.teehanlax.com/blog/getting-started-with-reactivecocoa/]
+# ["Documentations":https://github.com/ReactiveCocoa/ReactiveCocoa/tree/master/Documentation]
+
+在文章最后作者提到了这个App还有很大的扩展空间,比如说根据location显示当地的天气情况,并根据location切换backgroudimg等等。总之生命在于折腾，继续努力吧。少年~
