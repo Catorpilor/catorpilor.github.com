@@ -1,0 +1,48 @@
+---
+layout: post
+title: 认真与专注
+date: 2014-04-15 19:45
+post-link:
+tags:
+- 心情
+---
+
+
+bq. <em>认真
+		繁体 認真
+		拼音 rèn zhēn
+		①态度谨严不马虎：认真对待｜学习认真。	
+		②当真；信以为真：一句玩笑话，何必认真?
+	</em>
+
+今天在["stackoverflow":http://stackoverflow.com/]查询问题时，无意间点开了个人信息发现在["Exchange":http://superuser.com/]居然有151rep,仔细看了下["问题":http://superuser.com/questions/304541/how-to-install-new-packages-on-cygwin/304545#304545]以及"自己"回答的内容后令我感到很震撼。
+首先这["编辑":http://superuser.com/posts/304545/revisions]过的内容
+!=(resize)/../accessary/2014/modified_answer.png!
+
+跟原始答案一比简直就是山珍海味与老帮菜的差距同时chinglish以及老外的认真让我很汗颜
+!=(resize)/../accessary/2014/third_edit.png!
+!=(resize)/../accessary/2014/second_edit.png!
+!=(resize)/../accessary/2014/first_edit.png!
+
+bq. _伟大领袖毛主席说过"世界上就怕认真二字"_
+
+认真不仅是一种态度更多的是对别人负责也对自己负责。这事儿对我触动很大平时就是太不较真导致错过了好多发现问题解决问题的机会，所以今天要认真的写这篇Blog。
+
+bq. <em>专注
+		繁体 專注
+		拼音 zhuān zhù
+		[be absorbed in;concentrate on] 专心注意;精神贯注
+	</em>
+
+!=(resize)/../../accessary/2014/focus.jpg!
+
+前段时间看别人博客中提到了["番茄工作法":http://www.zhihu.com/question/20189826]
+
+bq. <em>简单来说，就是把工作时间划分为多个番茄时间。一个番茄时间包含两个部分：25分钟的工作学习和5分钟的休息</em>
+
+网上有不少关于它的介绍现在Appstore和Google Play里也有好些相关的App可根据个人喜好自行下载，这里我推荐的是由Tencent Alloyteam开源的["Alloy Timer":http://alloyteam.github.io/AlloyTimer/]
+!=(resize)/../../accessary/2014/alloy_timer.png!
+
+这是仁者见仁智者见智的方法，对我来说在某个时间段内将任务细分后可以更高效专注的完成TA。最后引用一句话共勉
+
+bq. <em>The successful man is the average man, focused.</em> 
