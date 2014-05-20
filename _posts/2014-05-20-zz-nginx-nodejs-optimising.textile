@@ -1,0 +1,12 @@
+---
+layout: post
+title: ZZ Nginx Nodejs Optimising
+date: 2014-05-20 16:06
+post-link:
+tags:
+- nginx
+---
+
+在网上看到一篇关于Nginx和Node.js优化方面的文章，转载下.
+["optimising-nginx-node-js-and-networking-for-heavy-workloads":https://engineering.gosquared.com/optimising-nginx-node-js-and-networking-for-heavy-workloads]
+
