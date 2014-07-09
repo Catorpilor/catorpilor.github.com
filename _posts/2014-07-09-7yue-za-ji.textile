@@ -1,0 +1,21 @@
+---
+layout: post
+title: 7月杂记
+date: 2014-07-09 22:28
+post-link:
+tags:
+- 心情
+---
+
+四年一度的世界杯到今天为止已进入尾声，今天凌晨进行的一场半决赛让人大跌眼睛，五星巴西被德意志战车无情的碾碎，主教练决策的失误(打对攻)以及渣渣一般的后防让擅长快速反击的德国队几乎抓住了一切机会10脚射正门框进了7球，要不是最后博阿滕机智的放水以及诺伊尔影帝般的演技让Oscar打入了挽回颜面的一球，结局会更加惨不忍睹。不知道看台上解说的大罗看到主队这样的表现心里是啥滋味更别提克洛斯破了他的世界杯进球记录。。。一场半决赛生生的演变为一场友谊赛。WTF
+
+!=(resize)/../accessary/2014/cloze.jpeg!
+
+
+下一话题，今天购买了catorpilor.com域名以及["Digitalocean":http://digitalocean.com]的10刀/Month 的套餐,做了相关的DNS设置后以后所有["Old Blog Link":http://catorpilor.github.io]都会redirect到["New Blog":http://blog.catorpilor.com].
+
+在阅读上面，从现在开始要争取养成一到2月一本技术书的习惯，目前在进行中的有:
+- ["More Excepetional C++":http://book.douban.com/subject/5908728/]
+<div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div></div>
+
+
