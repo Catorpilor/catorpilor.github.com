@@ -1,0 +1,26 @@
+---
+layout: default
+title: Archives
+---
+
+<h2 class="blog-post-title">{{ page.title }}</h2>
+<hr/>
+<p class="blog-post-meta">
+	{% for post in site.posts %}
+      {% unless post.next %}
+      <h1>{{ post.date | date: '%Y' }}</h1>
+      {% else %}
+      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% if year != nyear %}
+      <h1>{{ post.date | date: '%Y' }}</h1>
+      {% endif %}
+      {% endunless %}
+       <span class="post_date">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+       <hr/>
+    {% endfor %}
+
+</p>
+
+
+    

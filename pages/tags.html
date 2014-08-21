@@ -2,23 +2,18 @@
 layout: default
 title: Tags
 ---
+
 <h2 class="blog-post-title">{{ page.title }}</h2>
+
 <p class="blog-post-meta">
+<div class="row">
 {% for tag in site.tags %}
-<a class="label label-primary" href="#{{ tag[0] }}">{{ tag[0] }}</a>
+	<div class="col-sm-8">
+		<a class="label label-primary" href="/tags/{{ tag[0] }}">{{ tag[0] }}</a><span class="badge">{{ tag[1].size }}</span>
+	</div>
 {% endfor %}
+</div>
 </p>
 
-{% for tag in site.tags %}
-<h3 id="{{ tag[0] }}">{{ tag[0] }}</h3>
-<ul>
-    {% for post in site.posts %}
-    {% for posttags in post.tags %}
-    {% if posttags == tag[0] %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endif %}
-    {% endfor %}
-    {% endfor %}
-</ul>
-{% endfor %}
+
     

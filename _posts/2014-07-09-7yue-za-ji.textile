@@ -3,6 +3,7 @@ layout: post
 title: 7月杂记
 date: 2014-07-09 22:28
 post-link:
+summary: 7月小结，收拾下心情继续上路.....
 tags:
 - 心情
 ---

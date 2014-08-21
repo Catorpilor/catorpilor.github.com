@@ -1,0 +1,14 @@
+---
+layout: post
+title: the Month
+date: 2014-08-14 19:35
+post-link:
+summary: 8月小结....未完待续
+tags:
+- 心情
+---
+
+bq. <em>人生，因缘而聚，因情生暖；因为经历，所以懂得；因为懂得，所以珍惜，所有的经历，都是岁月的一种恩赐。</em>
+
+
+this is a test

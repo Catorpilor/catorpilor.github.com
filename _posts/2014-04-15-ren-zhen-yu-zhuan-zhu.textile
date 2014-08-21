@@ -3,6 +3,7 @@ layout: post
 title: 认真与专注
 date: 2014-04-15 19:45
 post-link:
+summary: 认真做事,低调做人......
 tags:
 - 心情
 ---
