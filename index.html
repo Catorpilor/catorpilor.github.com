@@ -15,7 +15,7 @@ title: Home
       <span class="label label-info"><a class="blog-nav-item"  href="/tags/{{ tag }}">{{ tag }}</a></span>
     {% endfor %}
   </p>
-   {{ post.content |strip_html | truncate:257 }}
+   {{ post.summary }}
    <p></p>
    <p><a href="{{ post.url }}">阅读全文 <span>&raquo;</span></a></p>
 </div>
