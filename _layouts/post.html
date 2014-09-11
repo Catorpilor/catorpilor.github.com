@@ -9,10 +9,11 @@ layout: default
 	<p class="blog-post-meta">
   <i class="glyphicon glyphicon-tag"></i>
   {% for tag in page.tags %}
-    <span class="label label-info"><a href="/tags/{{ tag }}">{{ tag }}</a></span>
+    <span class="label label-default"><a href="/tags/{{ tag }}">{{ tag }}</a></span>
   {% endfor %}
   </p>
 {% endif %}
+<hr/>
 {{ content }}
 <div align="right" class="date-container">{{ page.date | date:"%e %B %Y @ %I:%M%p"}}</div>
 </div>

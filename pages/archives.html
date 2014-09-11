@@ -16,7 +16,7 @@ title: Archives
       <h1>{{ post.date | date: '%Y' }}</h1>
       {% endif %}
       {% endunless %}
-       <span class="post_date">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+       <div class="tagedlist"><span class="post_date">{{ post.date | date_to_string }}</span> &raquo; <a style="font-size:28px;" href="{{ post.url }}">{{ post.title }}</a></div>
        <hr/>
     {% endfor %}
 

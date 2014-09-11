@@ -5,10 +5,16 @@
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #555;
+  background-color: #f8f8f8;
+}
+
+h2, .h2{
+  font-weight: bold;
+  font-size: 45px;
 }
 
 h1, .h1,
-h2, .h2,
+/*h2, .h2,*/
 h3, .h3,
 h4, .h4,
 h5, .h5,
@@ -95,10 +101,10 @@ h6, .h6 {
 }
 
 /* Active state gets a caret at the bottom */
-.blog-nav .active {
+.nav .active {
   color: #fff;
 }
-.blog-nav .active:after {
+.nav .active:after {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -112,6 +118,60 @@ h6, .h6 {
   border-left:   5px solid transparent;
 }
 
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.customblock {
+  display: block;
+  height: 4px;
+  border: 0;
+ /* border-top: 1px solid #ccc;*/
+  margin: 1em 0;
+  padding: 0;
+}
+
+.navbar {
+  /*text-transform: uppercase;*/
+  margin-bottom: 0px;
+}
+
+.navbar-inverse {
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+
+.navbar-inverse {
+  background-color: rgba(36, 35, 35, 0.84);
+  border-color: rgba(54, 54, 54, 0.84);
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #222222;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 33px;
+  letter-spacing: 2px;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: transparent;
+}
 
 /*
  * Blog name and description
@@ -127,12 +187,43 @@ h6, .h6 {
   font-size: 60px;
   font-weight: normal;
 }
+.label a{
+  color: #FFF;
+  text-decoration: none;
+}
+.blog-post-title a {
+  color: rgba(74, 76, 77, 0.83);
+  text-decoration: none;
+}
+
+.blog-post a:hover {
+  color: rgba(74, 76, 77, 0.83);
+  text-decoration: none;
+}
+
 .blog-description {
   font-size: 20px;
   color: #999;
 }
 
+.tagedlist a{
+  color: rgba(74, 76, 77, 0.83);
+  text-decoration: none;
+}
 
+.tagedlist a:hover{
+  color: #428bca;
+  text-decoration: none;
+}
+
+/*a {
+  color: #ffffff;
+}*/
+
+.bq {
+  font-size: 22px;
+  padding-top: 30px;
+}
 /*
  * Main column and sidebar layout
  */

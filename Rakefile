@@ -4,7 +4,7 @@
 require "rubygems"
 require "rake"
 require "date"
-# require "stringex"
+#require "stringex"
 
 ## -- Misc Configs -- ##
 source_dir      = "."    # source file directory
@@ -67,6 +67,7 @@ task :new_post, :title do |t, args|
     post.puts "title: #{title.gsub(/&/,'&amp;')}"
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
     post.puts "tags:"
+    post.puts "summary:"
     post.puts "---"
     post.puts ""
     post.puts ""
