@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 {% if page.post-link %}
 <h1><a href="{{ page.post-link }}" title="External link">{{ page.title }}</a></h1>
 {% else %}
@@ -17,6 +18,9 @@ layout: default
 {{ content }}
 <div align="right" class="date-container">{{ page.date | date:"%e %B %Y @ %I:%M%p"}}</div>
 </div>
+<link rel="stylesheet" href="/public/stylesheets/default.min.css">
+<script src="/public/javascripts/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
  <div id="disqus_thread"></div>
  <script type="text/javascript">
  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

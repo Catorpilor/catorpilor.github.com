@@ -9,15 +9,15 @@ tags:
 
 接["上篇":http://catorpilor.github.io/2014/03/09/simple-weather-app.html],在按照tutorial敲完代码后决定继续扩展这个app，首先就从作者提到的用Flicker API获取本地的照片为背景图片来入手作为扩展的第一阶段。
 ["Flicker API":http://www.flickr.com/services/api/] 提供了很多获取图片的方法，这里用到的是["Flicker.photos.search":http://www.flickr.com/services/api/flickr.photos.search.html] 它提供了很多参数可供选择。因为我们是通过location来确定图片所以<code>lat＝latitude</code>和<code>lon=lontitude</code>就是必填参数了，接下来就是<code>sort＝interestingness-desc</code>这里为了简化我们选取了一个location关注最多的图片，其他参数的用法可参见文档，最后整合的url串如下所示:
-<pre><code>
+<pre><code class="obj-c">
 NSString *request = [NSString stringWithFormat:@"http://api.flickr.com/services/rest/?method=flickr.photos.search&sort=interestingness-desc&accuracy=16&per_page=1&extras=original_format,owner_name,place_url&lat=%f&lon=%f", coordinate.latitude, coordinate.longitude];
 request = [NSString stringWithFormat:@"%@&format=json&nojsoncallback=1&api_key=%@", request, FlickrAPIKey];
 NSURL *url = [NSURL URLWithString:request];
 </code></pre>
 获取本地图片与获取本地天气情况类似，所以在<a href="https://gist.github.com/Catorpilor/9485134"><code>SWClient.h</code></a>中添加以下方法:
-<pre><code>- (RACSignal *)fetchCurrentPictureForLocation:(CLLocationCoordinate2D)coordinate;</code></pre>
+<pre><code class="obj-c">- (RACSignal *)fetchCurrentPictureForLocation:(CLLocationCoordinate2D)coordinate;</code></pre>
 具体实现与<a href="https://gist.github.com/Catorpilor/9485161"><code>SWClient.m</code></a>其他获取天气方法一样通过<code>MTLJSONSerializing</code>实例化因此这里需要添加一个派生自<code>MTLModel</code>的类<a href="https://gist.github.com/Catorpilor/9485086"><code>SWPhoto</code></a>。
-在<code>SWManager</code>类中添加<pre><code>- (RACSignal *)fetchPhotos {
+在<code>SWManager</code>类中添加<pre><code class="obj-c">- (RACSignal *)fetchPhotos {
     return [[self.client fetchCurrentPictureForLocation:self.currentLocation.coordinate] doNext:^(NSArray *photo){
         self.photosAtCurrentLocation = photo;
     }];
