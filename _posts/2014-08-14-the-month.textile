@@ -1,14 +1,15 @@
 ---
 layout: post
-title: the Month
+title: the 8 Month
 date: 2014-08-14 19:35
 post-link:
-summary: 8月小结....未完待续
+summary: 8月小结....On my way!
 tags:
 - 心情
 ---
 
 bq. <em>人生，因缘而聚，因情生暖；因为经历，所以懂得；因为懂得，所以珍惜，所有的经历，都是岁月的一种恩赐。</em>
 
+这月工作和生活中的事儿压着我都快喘不过气来，好在最后咬牙撑过来了，其中艰辛曲折不为人表。对我来说也是一种成长，收拾心情继续上路。
 
-this is a test
+!=(resize)/../accessary/2014/road.jpg!

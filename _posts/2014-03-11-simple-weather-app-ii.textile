@@ -22,7 +22,7 @@ NSURL *url = [NSURL URLWithString:request];
         self.photosAtCurrentLocation = photo;
     }];
 }</code></pre>
-并将其添加到<code>RACObserve(self,currentLocation) merge:@[]</code>。
+并将其添加到<pre><code class="bash">RACObserve(self,currentLocation) merge:@[]</code></pre>。
 自此对Model的扩展已结束，接下来就是对View进行一定的修改，在<a href="https://gist.github.com/Catorpilor/9485231"><code>- (void)viewDidLoad </code></a>中添加对<code>photoAtcurrentLocation</code>的Observe，当location变化时获取到对应的photo并通过GCD下载后设置为backgroundimage. 效果如下:
 Moscow
 !=(resize)/../accessary/2014/moscow.png!
