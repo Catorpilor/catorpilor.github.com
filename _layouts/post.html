@@ -12,11 +12,19 @@ layout: default
   {% for tag in page.tags %}
     <span class="label label-default"><a href="/tags/{{ tag }}">{{ tag }}</a></span>
   {% endfor %}
-  </p>
+  {% if page.updatetime %}
+  |  Update At {{ page.updatetime | date_to_string}}</span>
+  {% endif %}
+</p>
 {% endif %}
 <hr/>
+
 {{ content }}
-<div align="right" class="date-container">{{ page.date | date:"%e %B %Y @ %I:%M%p"}}</div>
+
+<hr>
+<p class="blog-post-meta">
+Posted At {{ page.date | date:"%I:%M %p"}}
+</p>
 </div>
 <link rel="stylesheet" href="/public/stylesheets/default.min.css">
 <script src="/public/javascripts/highlight.min.js"></script>
