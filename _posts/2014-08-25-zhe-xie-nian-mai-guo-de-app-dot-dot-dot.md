@@ -2,6 +2,7 @@
 layout: post
 title: 这些年买过的App
 date: 2014-08-25 23:02
+updatetime: 2014-11-07 23:26
 tags:
 - app
 summary: 好的App值得购买去支持作者，希望将来我的App也这样。AzazA!
@@ -24,6 +25,7 @@ summary: 好的App值得购买去支持作者，希望将来我的App也这样�
 * [Reeder](#reeder)
 * [Sketch 3](#sketch)
 * [Sketch Mirror](#smirror)
+* [Vitamin R](#vitaminR)
 
 持续更新中.......
 
