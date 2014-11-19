@@ -30,17 +30,7 @@ summary: 好的App值得购买去支持作者，希望将来我的App也这样�
 * [Sketch Mirror](#smirror)
 * [Vitamin R](#vitaminR)
 
-更新日志:
-> 19/11/2014 
-> 1. DailyCost 
-> 2. Manico
-> 3. GoodReader 4
->    
-> 07/11/2014
-> 1. Daisy
-> 2. Vitamin R
->   
->   
+
 
 
 
