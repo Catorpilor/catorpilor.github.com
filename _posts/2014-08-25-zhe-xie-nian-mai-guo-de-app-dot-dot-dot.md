@@ -2,7 +2,7 @@
 layout: post
 title: 这些年买过的App
 date: 2014-08-25 23:02
-updatetime: 2014-11-07 23:26
+updatetime: 2014-11-19 22:12
 tags:
 - app
 summary: 好的App值得购买去支持作者，希望将来我的App也这样。AzazA!
@@ -31,14 +31,14 @@ summary: 好的App值得购买去支持作者，希望将来我的App也这样�
 * [Vitamin R](#vitaminR)
 
 更新日志:
->   19/11/2014 
->    1. DailyCost 
->    2. Manico
->    3. GoodReader 4
+> 19/11/2014 
+> 1. DailyCost 
+> 2. Manico
+> 3. GoodReader 4
 >    
->   07/11/2014
->    1. Daisy
->    2. Vitamin R
+> 07/11/2014
+> 1. Daisy
+> 2. Vitamin R
 >   
 >   
 
