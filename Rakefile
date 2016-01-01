@@ -4,7 +4,7 @@
 require "rubygems"
 require "rake"
 require "date"
-#require "stringex"
+require "stringex"
 
 ## -- Misc Configs -- ##
 source_dir      = "."    # source file directory

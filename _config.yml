@@ -9,7 +9,7 @@ destination:        ./_site
 #
 # post to display per pages
 paginate: 5
-
+gems: [jekyll-paginate]
 navigation:
 - title: Home
   url: /
